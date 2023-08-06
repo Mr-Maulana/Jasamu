@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "~sweetalert2/src/sweetalert2.scss";
+
+[x-cloak] {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.kategori-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.kategori-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.kategori-btn:hover {
+    background-color: #ddd;
+}
+
+.service-details {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.img {
+    width: 100%;
+}
+
+.text-gray-700 {
+    color: #4a5568;
+}
+
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.btn-close {
+    background-color: #718096;
+    color: #fff;
+}
+
+.btn-close:hover {
+    background-color: #4a5568;
+}
+
+.btn-hubungi {
+    background-color: #f6ad55;
+    color: #fff;
+}
+
+.btn-hubungi:hover {
+    background-color: #dd6b20;
+}
+
+
