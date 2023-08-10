@@ -14,7 +14,12 @@
 
         <div class="flex flex-col">
             <label for="category" class="text-gray-800">Category:</label>
-            <input type="text" wire:model="category" id="category" class="border border-gray-300 rounded-md px-4 py-2">
+            <select wire:model="category" id="category" class="border border-gray-300 rounded-md px-4 py-2">
+                <option value="">Select Category</option>
+                @foreach ($categories as $category)
+                    <option value="{{ $category }}">{{ $category }}</option>
+                @endforeach
+            </select>
             @error('category') <span class="text-red-500">{{ $message }}</span> @enderror
         </div>
 
@@ -25,10 +30,11 @@
         </div>
 
         <div class="flex flex-col">
-                <label for="contact" class="text-gray-800">Contact:</label>
-                <input type="text" wire:model="contact" id="contact" class="border border-gray-300 rounded-md px-4 py-2" placeholder="Format: +62XXXXXXXXXXX">
-                @error('contact') <span class="text-red-500">{{ $message }}</span> @enderror
-            </div>
+            <label for="contact" class="text-gray-800">Contact:</label>
+            <input type="text" wire:model="contact" id="contact" class="border border-gray-300 rounded-md px-4 py-2" placeholder="Format: +62XXXXXXXXXXX">
+            @error('contact') <span class="text-red-500">{{ $message }}</span> @enderror
+        </div>
+        
         <div class="flex flex-col">
             <label for="description" class="text-gray-800">Description:</label>
             <textarea wire:model="description" id="description" class="border border-gray-300 rounded-md px-4 py-2" placeholder="Alamat dan lainnya"></textarea>

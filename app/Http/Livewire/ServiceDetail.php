@@ -71,4 +71,9 @@ class ServiceDetail extends Component
 
         return view('livewire.service-detail', compact('service', 'dailyReports', 'monthlyReports', 'yearlyReports'));
     }
+
+    public function goBack()
+    {
+        return redirect()->to(route('service-index'));
+    }
 }

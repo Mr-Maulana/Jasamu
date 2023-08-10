@@ -113,4 +113,117 @@ body {
     background-color: #dd6b20;
 }
 
+.review-form {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}
+
+.review-form textarea,
+.review-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.review-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.review-list {
+    margin-top: 20px;
+}
+
+.review-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.review-rating {
+    color: #f39c12;
+}
+
+.star {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #f39c12;
+}
+
+.rating {
+    display: inline-block;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 25px;
+    padding: 0 5px;
+    cursor: pointer;
+    color: #d3d3d3; /* Warna bintang tidak terpilih */
+}
+
+.rating label:before {
+    content: '\2605';
+}
+
+.rating input:checked ~ label:before {
+    color: #f39c12; /* Warna bintang terpilih */
+}
+
+/* CSS for Google-like search bar */
+.search-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1.5px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 6px;
+    font-size: 16px;
+}
+
+.search-input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(0, 128, 0, 0.3);
+}
+
+.search-icon {
+    font-size: 20px;
+    color: #5f6368;
+    margin-right: 6px;
+}
+
+/* Optional: Add animation to search icon */
+.search-icon:hover {
+    color: #888;
+    transition: 0.3s;
+}
+
+/* Optional: Add animation to search input */
+.search-input:hover {
+    border-color: #888;
+    transition: 0.3s;
+}
+
 

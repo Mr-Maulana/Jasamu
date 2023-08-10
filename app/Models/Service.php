@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Review;
 use App\Models\Visit;
 
 class Service extends Model
@@ -27,5 +28,10 @@ class Service extends Model
     public function getVisitsCountAttribute()
     {
         return $this->visits()->count();
+    }
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
     }
 }

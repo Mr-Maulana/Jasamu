@@ -10,10 +10,15 @@
             <li><span class="font-bold">Nomor:</span> {{ $service->contact }}</li>
         </ul>
         <div class="mt-4">
-            <button wire:click="$emit('closeServiceDetail')" class="bg-gray-500 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded">Tutup</button>
+            <button wire:click="goBack" class="bg-gray-500 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded">Tutup</button>
             <a href="tel:{{ $service->contact }}"><button type="button" class="bg-gray-500 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded">Hubungi</button></a>
+        </div>
+        <br>
+        <div class="mt-4">
+        @livewire('review-component', ['service' => $service])
 
+        <a href="{{ route('services.review', ['serviceId' => $service->id]) }}">
         </div>
     </div>
 </div>
-
+<br>

@@ -10,7 +10,7 @@
                                 <button wire:click="$set('showCreateForm', true)" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">Add Service</button>
                             @endif
                         </div>
-                        <div class="center">{{ $services->links() }}</div>
+                            <div class="center">{{ $services->links() }}</div>
                         <br>
                         @if ($showCreateForm)
                             <livewire:create-service />
@@ -31,7 +31,7 @@
                                         <img src="{{ $service->image }}" class="w-full" alt="{{ $service->name }}">
                                         <div class="px-6 py-4">
                                             <div class="font-bold text-xl mb-2">{{ $service->name }}</div>
-                                            <p class="text-gray-700 text-base">{{ $service->description }}</p>
+                                            <p class="text-gray-700 text-base">{{ $service->category }}</p>
                                         </div>
                                         <div class="px-6 py-4">
                                             <center>
